@@ -1,4 +1,4 @@
 FROM centos:latest
 MAINTAINER Anant
-RUN yun -y install httpd 
+RUN yum -y install httpd 
 COPY index.html /var/www/html
