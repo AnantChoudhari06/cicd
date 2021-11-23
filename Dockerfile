@@ -1,2 +1,4 @@
-FROM hshar/webapp
-ADD . /var/wwww/index.html
+FROM centos:latest
+MAINTAINER Anant
+RUN yun -y install httpd 
+COPY index.html /var/www/html
